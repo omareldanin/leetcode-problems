@@ -16,7 +16,6 @@ var strStr = function(haystack, needle) {
   }
   for (let i = 0; i < x.length; i++) {
     var temp = haystack.slice(x[i], x[i] + needle.length);
-    console.log(temp);
     if (temp === needle) {
       result = x[i];
       break;
