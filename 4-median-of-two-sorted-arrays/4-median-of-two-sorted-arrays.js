@@ -34,6 +34,5 @@ var findMedianSortedArrays = function(nums1, nums2) {
     let pos = Math.floor(merged.length / 2) - 1;
     result = (merged[pos] + merged[pos + 1]) / 2;
   }
-  console.log(merged);
   return result;
 };
