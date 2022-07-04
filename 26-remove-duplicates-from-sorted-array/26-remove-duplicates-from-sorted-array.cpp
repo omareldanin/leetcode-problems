@@ -1,16 +1,15 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var removeDuplicates = function(nums) {
-  var k = 0;
-  var x = null;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== x) {
-      x = nums[i];
-      nums[k] = x;
-      k++;
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+          int k = 0;
+          int x = nums[0]-1;
+          for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] != x) {
+              x = nums[i];
+              nums[k] = x;
+              k++;
+            }
+          }
+          return k;
     }
-  }
-  return k;
 };
